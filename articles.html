@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+</head>
+<body>
+ <div id="header"></div>
+ 
+    <section class="herocta-section">
+        <div class="container herocta-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="herocta-title">NEWS</h1>
+                    <a href="#" class="herocta-button">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5">
+  <div class="row g-4">
+          <h2 class="news-title">ARTICLES</h2>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/news1.png" class="card-img-top" alt="News clipping 1">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/news2.png" class="card-img-top news-img" alt="News clipping 2">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="assets/images/news3.png" class="card-img-top news-img" alt="News clipping 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+
+  
+ <div id="footer"></div>
+    <script> 
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });  
+    </script>
+    
+    
+
+   <script src="assets/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

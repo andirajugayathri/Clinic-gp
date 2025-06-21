@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration CTA</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+</head>
+<body>
+
+  <div id="header"></div>
+    <section class="herocta-section">
+        <div class="container herocta-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="herocta-title">DECLARATION</h1>
+                    <a href="#" class="herocta-button">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="declation-section m-4">
+        <div class="declation-container">
+            <h2 class="declation-title">Declaration</h2>
+            
+            <div class="declation-content">
+                <p class="declation-paragraph">
+                    All doctors and dentists associated with <span class="declation-emphasis">Clinic Golden Proportions</span> (hereafter referred to as Doctors) hereby clearly state that we do not take commission/ gifts/ remuneration from any pharmaceutical agency/ investigative laboratory/ diagnostic laboratory/ hospital. we do not avail of any gifts in lieu of prescriptions. wemay take medical samples from time to time to distribute to patients of lesser means, but we prescribe generic medication and do not recommend you purchase any specific brand. If a consolidated package charge is offered to you for any procedure, we clarify the quality of implants and medication being used.
+                </p>
+                
+                <p class="declation-paragraph">
+                    All payments are made by the patient directly to the concerned entities (hospital/ implant supplier/ pharmacy) and the Doctors will clarify what charges are to be paid to <span class="declation-emphasis">Clinic Golden Proportions</span> and to the Doctors directly.
+                </p>
+                
+                <p class="declation-paragraph">
+                    We wish to clearly state that all charges are clearly mentioned at the time of treatment planning and in the absence of unforeseen events these charges will be adhered to these charges will be mailed to the patient in the case of Surgeries and you may contact the doctors if you have any doubts. an event the patient will have to bear the additional charges arising out of such eventualities and the Doctors will not attempt to profit from patients who are in distress as such a time. This will include complications arising out of any surgical or dental procedure during or after the completion of the procedure.
+                </p>
+                
+                <p class="declation-paragraph">
+                    To ensure transparency and documentation of all proceedings, the premises of <span class="declation-emphasis">Clinic Golden Proportions</span> are monitored by CCTV and all recordings are maintained in perpetuity. The consultations are recorded for video and sound and all conversations are clearly recorded and stored.
+                </p>
+                
+                <p class="declation-paragraph">
+                    Documentation of the patient - photographs and investigations - are duly preserved in our records and will not be shared with other patients unless a <span class="declation-emphasis">Model Release</span> form is duly signed by the patient or guardian.
+                </p>
+                
+                <p class="declation-paragraph">
+                    Photographs of patients kept for patient education are done with the written permission of the respective patients. If you do not mind your photographs being used for patient education by our Doctors, you may sign the Model Release form and avail a reduction in your treatment costs.
+                </p>
+                
+                <p class="declation-paragraph">
+                    If you hove any doubts regarding any aspect of your treatment you are requested to contact your Doctor for an explanation. We will gladly spend time explaining all nuances of the procedure. However, telephonic consultations ore to be avoided under legal guidelines.
+                </p>
+                
+                <div class="declation-highlight">
+                    Though we have tie ups with various clinics and hospitals in various cities in India, all the surgeries are only carried out by the Clinic GP team.<br><br>
+                    The content of this website is for informational and educational purposes only and should not be interpreted as soliciting or advertisement.
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+   <div id="footer"></div>
+    <script> 
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });  
+    </script>
+    
+    
+
+<script src="assets/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

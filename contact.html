@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+</head>
+<body>
+ <div id="header"></div>
+ 
+    <section class="herocta-section">
+        <div class="container herocta-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="herocta-title">CONTACT US</h1>
+                    <a href="#" class="herocta-button">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ctnpage-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="ctnpage-office-section">
+                        <h2 class="ctnpage-title">Our Office</h2>
+                        <p class="ctnpage-description">
+                            Should you have any insurance queries or enquiries, please complete our enquiry form and one of our experienced brokers will contact you as soon as possible.
+                        </p>
+                        
+                        <div class="ctnpage-info-item">
+                            <div class="ctnpage-icon-wrapper">
+                                <i class="fas fa-map-marker-alt ctnpage-icon"></i>
+                            </div>
+                            <div class="ctnpage-info-content">
+                                <h5>Office Address</h5>
+                                <p class="ctnpage-info-text">
+                                    Suite 16, Level 2, 1 Ricketts Road, Mount<br>
+                                    Waverley, VIC 3149
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="ctnpage-info-item">
+                            <div class="ctnpage-icon-wrapper">
+                                <i class="fas fa-phone ctnpage-icon"></i>
+                            </div>
+                            <div class="ctnpage-info-content">
+                                <h5>Call</h5>
+                                <p class="ctnpage-info-text">+91 6362717686</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ctnpage-info-item">
+                            <div class="ctnpage-icon-wrapper">
+                                <i class="fas fa-envelope ctnpage-icon"></i>
+                            </div>
+                            <div class="ctnpage-info-content">
+                                <h5>Email</h5>
+                                <p class="ctnpage-info-text">vshetty@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 col-md-12">
+                    <div class="ctnpage-contact-section">
+                        <h3 class="ctnpage-contact-title">Let's Contact with us</h3>
+                        
+                        <form class="ctnpage-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="ctnpage-form-group">
+                                        <label class="ctnpage-form-label">
+                                            <i class="fas fa-user"></i>Full Name *
+                                        </label>
+                                        <input type="text" class="form-control ctnpage-form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ctnpage-form-group">
+                                        <label class="ctnpage-form-label">
+                                            <i class="fas fa-calendar"></i>Date *
+                                        </label>
+                                        <input type="date" class="form-control ctnpage-form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ctnpage-form-group">
+                                <label class="ctnpage-form-label">
+                                    <i class="fas fa-phone"></i>Phone Number *
+                                </label>
+                                <input type="tel" class="form-control ctnpage-form-control" required>
+                            </div>
+                            
+                            <div class="ctnpage-form-group">
+                                <textarea class="form-control ctnpage-form-control ctnpage-textarea" placeholder="Write Your Message" rows="5"></textarea>
+                            </div>
+                            
+                            <div class="ctnpage-checkbox-wrapper">
+                                <input type="checkbox" class="ctnpage-checkbox" id="terms" required>
+                                <label for="terms" class="ctnpage-checkbox-label">
+                                    I agree to all terms and conditions.
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="ctnpage-submit-btn">
+                                Submit
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+ <div id="footer"></div>
+    <script> 
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });  
+    </script>
+    
+    
+
+<script src="assets/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
