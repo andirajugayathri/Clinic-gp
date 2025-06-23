@@ -2915,7 +2915,7 @@ body {
 
         .count-section {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px 0 40px;
+            padding: 40px 0 0px;
             position: relative;
             overflow: hidden;
         }
@@ -3426,4 +3426,391 @@ body {
          }
          .surgery-heading h2{
             color: #2c5aa0; font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;
+         }
+
+         /* OUR MAJOR SERVUICES SE3CTION */
+         .our-major-services{
+            font-family: 'Arial', sans-serif;
+            background-image: url('/assets/images/bg-our-major-services.jpg');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .our-major-services::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(26, 52, 99, 0.9); /* Blue with 70% opacity */
+            z-index: 0;
+        }
+
+        .our-major-services > * {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .services-section {
+            width: 100%;
+            max-width: 1000px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-subtitle {
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-family: 'Manrope';
+
+        }
+
+        .section-titles {
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Roboto';
+
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 59px;
+            padding: 20px 0;
+        }
+
+        .service-card {
+            flex: 0 0 280px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 21px;
+           
+            overflow: hidden;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .card-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #124A94;
+            transition: left 0.6s ease-in-out;
+            z-index: 1;
+        }
+
+        .service-card:hover .card-inner::before {
+            left: 0;
+        }
+
+        .service-card:hover .card-inner {
+            transform: translateY(-10px);
+           
+        }
+
+        .card-content-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover .card-content-wrapper {
+            color: white;
+        }
+
+        .service-card:hover .service-title {
+            color: white;
+        }
+
+        .service-card:hover .service-list li {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-image:url('/assets/images/our-major-services.jpg') ;
+        }
+
+
+        .service-icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 62px;
+            height: 62px;
+             display: flex;
+            /* border: 8px solid rgba(18, 74, 148, 1);
+            opacity:20%; */
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            z-index: 2;
+            background-color: #124c97;
+            transition: transform 0.6s ease;
+            
+            transform-origin: center;
+        }
+
+        .service-card:hover .service-icon {
+            transform: translateX(-50%) rotateY(180deg);
+            background-color: #21CDC0;
+        }
+
+        .card-content {
+            padding: 70px 0px 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            gap: 10px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2D4990;
+            font-family: 'Roboto';
+        }
+
+        .service-list {
+            list-style: none;
+            font-family: 'Manrope';
+            font-weight: 400;
+
+        }
+
+        .service-list li {
+            color: #6D6E73;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .read-more-btn {
+            color: #21CDC0;
+            border: none;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: center;
+            position: relative;
+            overflow: hidden;
+            background-color: transparent;
+            font-family: 'Roboto';
+        }
+
+        .read-more-btn i{
+            font-size: 12px;
+        }
+
+        .service-card:hover {
+            color: white;
+        }
+
+        .service-card:hover {
+            left: 0;
+        }
+
+        .back-content h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .back-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .back-content .highlight {
+            color: #00d4aa;
+            font-weight: 600;
+        }
+
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .indicator {
+            width: 40px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #00d4aa;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .service-card {
+                flex: 0 0 300px;
+            }
+            
+            .carousel-wrapper {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .service-card {
+                flex: 0 0 280px;
+            }
+        }
+     @media (max-width: 1024px) {
+    .carousel-wrapper {
+        flex-direction: row;
+        gap: 20px;
+        width: max-content;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-container {
+        overflow-x: hidden;
+    }
+
+    .service-card {
+        flex: 0 0 90vw;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .carousel-nav {
+        display: flex;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        margin-top: 20px;
+    }
+}
+ /* Why us cards in home */
+
+.whyus-cards {
+            z-index: 1;
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: none;
+            position: relative;
+            margin-bottom: -104px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+ .count-item {
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: countFadeInUp 0.8s ease forwards;
+        }
+
+ .count-number {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            font-family: 'Manrope';
+            margin-top: 50px;
+        }
+
+.count-label {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: rgba(255,255,255,0.9);
+            margin-top: 15px;
+            font-family: 'Manrope';
          }
