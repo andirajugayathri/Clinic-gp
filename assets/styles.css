@@ -2322,7 +2322,7 @@ body {
             
             .procedure-image-section {
                 height: 300px;
-                margin-bottom: 20px;
+                margin-bottom: 140px;
             }
             
             .procedure-team-image {
@@ -2370,9 +2370,9 @@ body {
         
         @media (max-width: 576px) {
             .procedure-stats-section {
-                margin-top: -30px;
                 padding: 30px 15px;
-            }
+                width: 100%!important  
+             }
             
             .procedure-medical-icon {
                 right: 10px;
@@ -3749,7 +3749,7 @@ body {
     .carousel-wrapper {
         flex-direction: row;
         gap: 20px;
-        width: max-content;
+        width: max-content!important;
         transition: transform 0.5s ease-in-out;
     }
 
@@ -3787,6 +3787,12 @@ body {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
         }
+        @media (max-width: 768px) {
+    .whyus-cards {
+        margin-bottom: 50px !important;
+    }
+}
+
 
  .count-item {
             text-align: center;
