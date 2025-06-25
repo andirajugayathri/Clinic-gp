@@ -30,8 +30,8 @@
                                     </h1>
                                     <p class="hero-subtitle">Sleep Apnea Treatment Center - Advanced Sleep Medicine</p>
                                     <div class="hero-buttons">
-                                        <a href="#" class="btn btn-hero-primary">MAKE APPOINTMENT</a>
-                                        <a href="#" class="btn btn-hero-secondary">LEARN MORE</a>
+                                        <a href="contact.html" class="btn btn-hero-primary">MAKE APPOINTMENT</a>
+                                        <a href="our-team.html" class="btn btn-hero-secondary">LEARN MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -255,6 +255,68 @@
             </div>
         </div>
     </section>
+    <section class="sleep-treatment-main py-5">
+        <div class="container">
+            <div class="text-center mb-5 surgery-heading">
+            <h2>The Path to Better Sleep</h2>
+            </div>
+
+            <div class="row g-4">
+            <!-- Initial Consultation -->
+            <div class="col-lg-3 col-md-6">
+                <div class="surgery-type-card">
+                <div class="surgery-type-icon">
+                    <i class="fas fa-user-md iconss"></i>
+                </div>
+                <h3>Initial Consultation</h3>
+                <p>
+                    Our process begins with a thorough evaluation including medical history review, physical examination of the throat, neck, and mouth, and assessment of your sleep patterns and symptoms.
+                </p>
+                </div>
+            </div>
+
+            <!-- Diagnostic Testing -->
+            <div class="col-lg-3 col-md-6">
+                <div class="surgery-type-card">
+                <div class="surgery-type-icon">
+                    <i class="fas fa-procedures iconss"></i>
+                </div>
+                <h3>Diagnostic Testing</h3>
+                <p>
+                    We utilize advanced polysomnography and home sleep apnea testing to accurately diagnose and classify the severity of your condition using standardized criteria.
+                </p>
+                </div>
+            </div>
+
+            <!-- Personalized Treatment Plan -->
+            <div class="col-lg-3 col-md-6">
+                <div class="surgery-type-card">
+                <div class="surgery-type-icon">
+                    <i class="fas fa-notes-medical iconss"></i>
+                </div>
+                <h3>Personalized Treatment Plan</h3>
+                <p>
+                    Based on your specific condition, anatomical factors, lifestyle preferences, and medical considerations, we develop a customized treatment approach designed for optimal results.
+                </p>
+                </div>
+            </div>
+
+            <!-- Ongoing Care -->
+            <div class="col-lg-3 col-md-6">
+                <div class="surgery-type-card">
+                <div class="surgery-type-icon">
+                    <i class="fas fa-heartbeat iconss"></i>
+                </div>
+                <h3>Ongoing Care</h3>
+                <p>
+                    Our commitment extends beyond initial treatment with comprehensive follow-up care, therapy adjustments, and long-term monitoring to ensure sustained improvement in your sleep quality and overall health.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
 
 
     <div class="appointment-container">
@@ -399,23 +461,6 @@
             document.getElementById('header').innerHTML = data;
         });  
         
-        function toggleFaq(element) {
-            const faqItem = element.closest('.faq-item');
-            const faqAnswer = faqItem.querySelector('.faq-answer');
-            const isActive = faqItem.classList.contains('faq-active');
-            
-            // Close all FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('faq-active');
-                item.querySelector('.faq-answer').style.display = 'none';
-            });
-            
-            // Toggle current item
-            if (!isActive) {
-                faqItem.classList.add('faq-active');
-                faqAnswer.style.display = 'block';
-            }
-        }
         
     </script>
 

@@ -250,59 +250,174 @@ function toggleFaq(element) {
 
 
         // Testimonial 
-        document.addEventListener('DOMContentLoaded', () => {
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.clients-slide');
-        const indicators = document.querySelectorAll('.clients-indicator');
-        const totalSlides = slides.length;
+       let currentSlideIndex = 0;
+let slides, indicators;
 
-        function showSlide(n) {
-            slides[currentSlideIndex].classList.remove('active');
-            indicators[currentSlideIndex].classList.remove('active');
-            
-            currentSlideIndex = (n + totalSlides) % totalSlides;
-            
-            slides[currentSlideIndex].classList.add('active');
-            indicators[currentSlideIndex].classList.add('active');
+document.addEventListener('DOMContentLoaded', () => {
+  slides = document.querySelectorAll('.clients-slide');
+  indicators = document.querySelectorAll('.clients-indicator');
+  showSlide(currentSlideIndex);
+
+  // Auto slide
+  setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+
+  // Touch swipe
+  let startX = 0, endX = 0;
+  const slider = document.querySelector('.clients-slider');
+  slider.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+  slider.addEventListener('touchend', e => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const diff = startX - endX;
+    if (Math.abs(diff) > 50) {
+      changeSlide(diff > 0 ? 1 : -1);
+    }
+  }
+});
+
+function showSlide(n) {
+  if (!slides || !indicators) return;
+
+  slides.forEach(slide => slide.classList.remove('active'));
+  indicators.forEach(dot => dot.classList.remove('active'));
+
+  currentSlideIndex = (n + slides.length) % slides.length;
+  slides[currentSlideIndex].classList.add('active');
+  indicators[currentSlideIndex].classList.add('active');
+}
+
+function changeSlide(n) {
+  showSlide(currentSlideIndex + n);
+}
+
+function currentSlide(n) {
+  showSlide(n - 1);
+}
+        // why choose us
+
+        class ServiceCarousel {
+        constructor() {
+            this.wrapper = document.getElementById('carouselWrapper');
+            this.prevBtn = document.getElementById('prevBtn');
+            this.nextBtn = document.getElementById('nextBtn');
+            this.indicators = document.getElementById('indicators');
+            this.cards = Array.from(document.querySelectorAll('.service-card'));
+            this.cardsPerSlide = 3;
+            this.totalSlides = Math.ceil(this.cards.length / this.cardsPerSlide);
+            this.currentIndex = 0;
+
+            this.init();
+            this.setupEventListeners();
+            this.createIndicators();
+            this.updateCarousel();
         }
 
-        function changeSlide(n) {
-            showSlide(currentSlideIndex + n);
+        init() {
+            // Set wrapper width based on slides
+            const slideWidth = 350 + 30; // card width + gap
+            this.wrapper.style.width = `${this.totalSlides * this.cardsPerSlide * slideWidth}px`;
         }
 
-        function currentSlide(n) {
-            showSlide(n - 1);
-        }
+        setupEventListeners() {
+            this.prevBtn.addEventListener('click', () => this.prev());
+            this.nextBtn.addEventListener('click', () => this.next());
 
-        // Auto-slide functionality
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
+            this.startAutoPlay();
 
-        // Touch/swipe support for mobile
-        let startX = 0;
-        let endX = 0;
+            this.wrapper.addEventListener('mouseenter', () => this.stopAutoPlay());
+            this.wrapper.addEventListener('mouseleave', () => this.startAutoPlay());
 
-        document.querySelector('.clients-slider').addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
+           window.addEventListener('resize', () => {
+            this.cardsPerSlide = window.innerWidth <= 1024 ? 1 : 3;
+            this.updateCarousel();
         });
 
-        document.querySelector('.clients-slider').addEventListener('touchend', (e) => {
-            endX = e.changedTouches[0].clientX;
-            handleSwipe();
-        });
+        }
 
-        function handleSwipe() {
-            const threshold = 50;
-            const diff = startX - endX;
-            
-            if (Math.abs(diff) > threshold) {
-                if (diff > 0) {
-                    changeSlide(1); // Swipe left - next slide
-                } else {
-                    changeSlide(-1); // Swipe right - previous slide
-                }
+        createIndicators() {
+            this.indicators.innerHTML = '';
+            for (let i = 0; i < this.totalSlides; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator';
+                indicator.addEventListener('click', () => this.goToSlide(i));
+                this.indicators.appendChild(indicator);
             }
         }
 
-        })
+
+        updateCarousel() {
+            const isMobile = window.innerWidth <= 1024;
+            const card = this.cards[0];
+            const cardWidth = card.offsetWidth;
+            const gap = parseFloat(getComputedStyle(this.wrapper).gap || 0);
+            const cardsPerSlide = isMobile ? 1 : this.cardsPerSlide;
+            const slideWidth = cardWidth + gap;
+
+            const offset = -(this.currentIndex * slideWidth * cardsPerSlide);
+            this.wrapper.style.transform = `translateX(${offset}px)`;
+
+            this.updateIndicators();
+        }
+
+
+        updateIndicators() {
+            const indicators = this.indicators.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === this.currentIndex);
+            });
+        }
+
+        prev() {
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+            } else {
+                this.currentIndex = this.totalSlides - 1;
+            }
+            this.updateCarousel();
+        }
+
+        next() {
+            if (this.currentIndex < this.totalSlides - 1) {
+                this.currentIndex++;
+            } else {
+                this.currentIndex = 0;
+            }
+            this.updateCarousel();
+        }
+
+        goToSlide(index) {
+            this.currentIndex = index;
+            this.updateCarousel();
+        }
+
+        startAutoPlay() {
+            this.stopAutoPlay();
+            this.autoPlayInterval = setInterval(() => {
+                this.next();
+            }, 4000);
+        }
+
+        stopAutoPlay() {
+            if (this.autoPlayInterval) {
+                clearInterval(this.autoPlayInterval);
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        new ServiceCarousel();
+    });
+
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('Read more clicked');
+        });
+    });
