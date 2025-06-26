@@ -132,11 +132,15 @@ body {
   box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
 }
 
+.navbar-toggler:hover{
+    color: gold!important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .topbar-info {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 100px !important;
     text-align: center;
   }
 
@@ -154,8 +158,14 @@ body {
   }
 
   .navbar-nav {
-    text-align: center;
+    text-align: left;
     margin-top: 15px;
+  }
+  .navbar-brand{
+    margin: 0;
+  }
+  .card-image{
+    height: 250px!important;
   }
 }
 
@@ -346,6 +356,7 @@ body {
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            justify-content: center;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
@@ -738,7 +749,7 @@ body {
         }
 
          .footer-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1a2f5a 100%);
+            background-color: #1A3463;
             color: #ffffff;
             padding: 60px 0 0;
             position: relative;
@@ -892,7 +903,6 @@ body {
         .footer-bottom {
             background: rgba(0, 0, 0, 0.2);
             padding: 25px 0;
-            margin-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
         }
@@ -939,6 +949,7 @@ body {
             
             .footer-heading {
                 font-size: 18px;
+                text-align: left;
                 margin-bottom: 20px;
             }
             
@@ -961,12 +972,12 @@ body {
             }
             
             .footer-heading::after {
-                left: 50%;
+                left: 5%;
                 transform: translateX(-50%);
             }
             
             .footer-contact-item {
-                justify-content: center;
+                
                 text-align: left;
             }
         }
@@ -1156,7 +1167,7 @@ body {
 
         .team-card {
             background: linear-gradient(135deg, #2c5282 0%, #2a4365 100%);
-            border-radius: 20px;
+            border-radius: 8px;
             padding: 0;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -1165,18 +1176,20 @@ body {
 
         .team-card-image {
             justify-self: center;
-            width: 80%;
-            height: 280px;
-            background: #e2e8f0;
+            width: 352px;
+            height: 305px;
+            margin:20px;
+            background: #FEEAE6!important;
             align-items: center;
             justify-content: center;
             position: relative;
+            border-radius: 4px;
         }
 
         .team-card-image img {
             width: 100%;
             height: 100%;
-            margin-top: 20px;
+            margin-top: 80px;
             object-fit: cover;
         }
 
@@ -1187,23 +1200,21 @@ body {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+            
             z-index: 1;
         }
 
         .team-doctor-image {
             position: relative;
             z-index: 2;
-            width: 200px;
-            height: 200px;
+            width: 245px;
+            height: 245px;
             border-radius: 10px;
-            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 40px auto;
+            margin: 40px auto 20px auto;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
 
         .team-doctor-placeholder {
@@ -1220,19 +1231,20 @@ body {
         
 
         .team-card-content {
-            padding: 30px;
+          padding-bottom: 20px;
             text-align: center;
             color: white;
         }
 
         .team-card-name {
-            font-size: 1.4rem;
-            font-weight: bold;
+            font-weight: 700;
+            font-size: 20px;
             margin-bottom: 15px;
             z-index:2;
             color: #1A3463;
             text-align: center;
             position: relative;
+            font-family: Roboto;
         }
 
         .team-card-credentials {
@@ -1262,11 +1274,16 @@ body {
                 max-width: 400px;
                 margin: 0 auto;
             }
+             .team-doctor-image {
+                margin: 40px auto 45px auto;
+             }
         }
 
         @media (max-width: 768px) {
-            .team {
-                padding: 60px 0;
+            
+           
+            .team-card-content{
+                padding-bottom: 10px;
             }
 
             .team-container {
@@ -1277,6 +1294,10 @@ body {
                 font-size: 2rem;
                 text-align: center;
             }
+
+            .team-doctor-image {
+                margin: 40px auto 45px auto;
+             }
 
             .team-description,
             .team-stats {
@@ -1904,10 +1925,6 @@ body {
                 margin-bottom: 60px;
             }
 
-            .clients-slider {
-                height: 450px;
-            }
-
             .clients-avatar {
                 width: 100px;
                 height: 100px;
@@ -1941,9 +1958,6 @@ body {
                 font-size: 1.8rem;
             }
 
-            .clients-slider {
-                height: 500px;
-            }
 
             .clients-testimonial {
                 font-size: 0.95rem;
@@ -2073,6 +2087,7 @@ body {
             .whyus-card-title {
                 font-size: 1.3rem;
             }
+            
         }
 
         .surgery-main {
@@ -2907,7 +2922,7 @@ body {
         }
         
         .hteam-btn {
-            background: linear-gradient(135deg, #26d0ce, #1ac7d6);
+            background:#21CDC0;
             color: white;
             border: none;
             padding: 12px 30px;
@@ -3045,6 +3060,9 @@ body {
             .count-section {
                 padding: 60px 0;
             }
+            .team-card-name {
+                margin-top: -25px;
+            }
         }
         
         .count-animated {
@@ -3067,6 +3085,8 @@ body {
     box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3)!important;
     }
 
+    
+
       /* Hero Slider Styles */
         .hero-slider {
             position: relative;
@@ -3087,15 +3107,13 @@ body {
         }
 
         .hero-content {
-            margin-top: -122px;
+            /* margin-top: -122px; */
             padding: 0px 60px;
             z-index: 2;
             position: relative;
         }
 
-        .hero-text {
-            max-width: 600px;
-        }
+       
 
         .hero-title {
             font-size: 60px;
@@ -3323,10 +3341,25 @@ body {
                 font-size: 1.1rem;
             }
 
+            /* change */
+
             .hero-content {
-                padding: 40px 20px;
                 text-align: center;
+                z-index: 2;
+                margin-top: 0px;
+                position: relative;
+                /* background-color: rgba(255, 255, 255, 0.6);  */
+                border-radius: 10px; 
             }
+
+           .hero-text {
+             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 569px;
+            margin-top: 38px;
+            display: flex;
+                }
 
             .hero-image {
                 height: 60vh;
@@ -3343,12 +3376,19 @@ body {
         }
 
         @media (max-width: 768px) {
+            .social-links{
+                display: none;
+            }
+            .none{
+                display: none;
+            }
             .hero-title {
                 font-size: 2.2rem;
             }
 
             .hero-subtitle {
                 font-size: 1rem;
+                margin-bottom: 15px;
             }
 
             .hero-buttons {
@@ -3378,16 +3418,49 @@ body {
             .carousel-control-next {
                 right: 15px;
             }
+
+            /* change */
+            .hero-image {
+                /* position: relative; */
+                display: flex;
+                        margin-top: -256px;
+                height: 295px !important;
+                align-items: center;
+                justify-content: center;
+            }
+
+             .hero-img {
+        max-width: 244px;
+        min-width: 160px;
+        min-height: 0px;
+        margin-top: -50px;
+        z-index: 0;
+    }
+
+    .hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 126%;
+    display: flex;
+      justify-content: end;
+    padding-top: 80px;
+}
+.hero-slide {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 50%, #b8e6eb 100%);
+    position: relative;
+    /* padding-top: 147px; */
+    min-height: 216px;
+    max-height:261px;
+}
         }
+                    
 
         @media (max-width: 576px) {
             .hero-title {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
-            .hero-content {
-                padding: 30px 15px;
-            }
+            
 
             .hero-buttons {
                 flex-direction: column;
@@ -3401,13 +3474,6 @@ body {
                 text-align: center;
             }
 
-            .hero-image {
-                height: 50vh;
-            }
-
-            .hero-single-img {
-                height: 50vh;
-            }
         }
         /* genioplasty */
         .procedure-content-wrapper h3{
@@ -3533,7 +3599,7 @@ body {
         .carousel-wrapper {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            gap: 59px;
+            gap: 42px;
             padding: 20px 0;
         }
 
@@ -3791,7 +3857,7 @@ body {
      @media (max-width: 1024px) {
     .carousel-wrapper {
         flex-direction: row;
-        gap: 20px;
+        gap: 30px;
         width: max-content!important;
         transition: transform 0.5s ease-in-out;
     }
@@ -3832,10 +3898,16 @@ body {
             overflow: hidden;
         }
         @media (max-width: 768px) {
-    .whyus-cards {
-        margin-bottom: 50px !important;
-    }
-}
+            .whyus-cards {
+                margin-bottom: 50px !important;
+            }
+            .hero-title .text-primary{
+                color: #1A3463!important;
+            }
+           .hero-title{
+                 color: #21CDC0 !important;
+           }
+        }
 
 
  .count-item {
