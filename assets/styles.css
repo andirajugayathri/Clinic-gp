@@ -462,7 +462,7 @@ body {
         }
 
         .herocta-section {
-            background: linear-gradient(135deg, #e8f5f5 0%, #d1e7dd 50%, #f0f8f8 100%);
+            background: linear-gradient(90deg, #D8F8F5 0%, #ECF3FD 50%, rgba(255, 255, 255, 0) 100%);
             min-height: 60vh;
             display: flex;
             align-items: center;
@@ -899,6 +899,11 @@ body {
             font-size: 15px;
             line-height: 1.5;
         }
+
+         .footer-contact-text a{
+            text-decoration: none;
+            color: #b8c7d9;
+         }
 
         .footer-bottom {
             background: rgba(0, 0, 0, 0.2);
@@ -1385,7 +1390,7 @@ body {
         }
         
         .ctnpage-form-label{
-           
+            color: #6c757d;
             font-weight: 500;
             margin-bottom: 8px;
             display: block;
@@ -3669,21 +3674,29 @@ body {
             background-size: cover;
             background-position: center;
             position: relative;
-            background-image:url('../assets/images/our-major-services.jpg') ;
+            overflow: visible;
         }
+
+        .card-image img{
+            width: 100%;
+             height: 100%;
+            object-fit: cover;
+             display: block;
+        }
+        
         .icons {
             background-color: #124A94;
             z-index: 2;
-            padding: 8px;
-            }
+            padding: 12px;
+        }
 
             .service-icon {
             position: absolute;
             bottom: -30px;
             left: 50%;
             transform: translateX(-50%);
-            width: 62px;
-            height: 62px;
+            width: 72px;
+            height: 72px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -3710,12 +3723,11 @@ body {
           }
 
         .card-content {
-            padding: 70px 0px 30px;
+            padding: 50px 0px 30px;
             flex: 1;
             display: flex;
             flex-direction: column;
-            /* justify-content: space-between; */
-            gap: 10px;
+            gap:5px;
         }
 
         .service-title {
@@ -3910,7 +3922,7 @@ body {
         }
 
 
- .count-item {
+        .count-item {
             text-align: center;
             color: white;
             opacity: 0;
@@ -3918,7 +3930,7 @@ body {
             animation: countFadeInUp 0.8s ease forwards;
         }
 
- .count-number {
+        .count-number {
             font-size: 40px;
             font-weight: 700;
             margin-bottom: 10px;
@@ -3928,7 +3940,7 @@ body {
             margin-top: 50px;
         }
 
-.count-label {
+        .count-label {
             font-size: 16px;
             font-weight: 400;
             line-height: 1.4;
@@ -3936,3 +3948,5 @@ body {
             margin-top: 15px;
             font-family: 'Manrope';
          }
+
+         
