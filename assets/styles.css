@@ -3536,7 +3536,7 @@ body {
          /* OUR MAJOR SERVUICES SE3CTION */
          .our-major-services{
             font-family: 'Arial', sans-serif;
-            background-image: url('/assets/images/bg-our-major-services.jpg');
+            background-image: url('../assets/images/bg-our-major-services.jpg');
             background-position: center;
             background-size: cover;
             position: relative;
