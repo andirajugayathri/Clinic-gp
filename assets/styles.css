@@ -136,6 +136,11 @@ body {
     color: gold!important;
 }
 
+ .topbar-items {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .topbar-info {
@@ -177,6 +182,9 @@ body {
   .topbar-item {
     font-size: 9px;
   }
+
+  
+
 
   .logo-circle {
     width: 40px;
@@ -1276,9 +1284,14 @@ body {
             }
 
             .team-card {
-                max-width: 400px;
+                max-width: 343px;
                 margin: 0 auto;
             }
+            .team-card-image {
+                width: 307px;
+            }
+
+
              .team-doctor-image {
                 margin: 40px auto 45px auto;
              }
@@ -3402,7 +3415,7 @@ body {
 
             .btn-hero-primary,
             .btn-hero-secondary {
-                padding: 12px 25px;
+                padding: 10px 25px;
                 font-size: 12px;
             }
 
