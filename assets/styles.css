@@ -3441,7 +3441,7 @@ body {
             .hero-image {
                 /* position: relative; */
                 display: flex;
-                        margin-top: -256px;
+               margin-top: -256px;
                 height: 295px !important;
                 align-items: center;
                 justify-content: center;
