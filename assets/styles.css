@@ -801,6 +801,7 @@ body {
 
         .footer-description {
             color: #b8c7d9;
+            text-align: left;
             font-size: 14px;
             line-height: 1.6;
             margin-bottom: 25px;
@@ -967,7 +968,7 @@ body {
             }
             
             .footer-social {
-                justify-content: center;
+                /* justify-content: center; */
                 margin-top: 20px;
             }
             
@@ -3495,7 +3496,7 @@ body {
         }
         /* genioplasty */
         .procedure-content-wrapper h3{
-            color:#667eea ;
+            color:#2dd4bf;
             margin-bottom: 5px;
         }
         .procedure-title{
@@ -3679,7 +3680,7 @@ body {
         }
 
         .service-card:hover .service-list li {
-            color: rgba(255, 255, 255, 0.9);
+            color:white;
         }
 
         .card-image {
