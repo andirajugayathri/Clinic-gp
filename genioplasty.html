@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-lg-7 hero-image">
                                 <div class="hero-image-container">
-                                    <img src="assets/images/genioplasty.png" alt="Medical Professional" class="hero-img">
+                                    <img src="assets/images/jaw.png" alt="Medical Professional" class="hero-img">
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,7 @@
                             </div>
                             <div class="procedure-stat-item">
                                 <span class="procedure-stat-number">4,132</span>
-                                <div class="procedure-stat-label">Cleft Lip and Palate Corrections</div>
+                                <div class="procedure-stat-label">Cleft Lip and Palate<br> Corrections</div>
                             </div>
                             <div class="procedure-stat-item">
                                 <span class="procedure-stat-number">2,158</span>
@@ -284,30 +284,47 @@
                 <div class="col-lg-6">
                     <div class="appointment-form-section">
                         <div class="appointment-badge">APPOINTMENT</div>
-                        <h1 class="appointment-title">Book Appointment</h1>
+                        <h1 class="appointment-title">Schedule your consultation today!</h1>
                         
                         <form>
-                            <div class="appointment-form-group">
-                                <input type="text" class="form-control appointment-form-control" placeholder="Name" required>
+                            <div class="appointment-row">
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="text" class="form-control appointment-form-control" placeholder="First Name" required>
+                                </div>
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="text" class="form-control appointment-form-control" placeholder="Last Name" required>
+                                </div>
                             </div>
                             
-                            <div class="appointment-form-group">
-                                <input type="email" class="form-control appointment-form-control" placeholder="Email" required>
+                            <div class="appointment-row">
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="email" class="form-control appointment-form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="tel" class="form-control appointment-form-control" placeholder="Phone Number" required>
+                                </div>
                             </div>
                             
-                            <div class="appointment-form-group">
-                                <input type="tel" class="form-control appointment-form-control" placeholder="Mobile" required>
-                            </div>
-                            
-                            <div class="appointment-form-group">
-                                <input type="date" class="form-control appointment-form-control" placeholder="Appointment Date" required>
+                            <div class="appointment-row">
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="date" class="form-control appointment-form-control" placeholder="Mm/Dd/Yyyy" required>
+                                </div>
+                                <div class="appointment-form-group appointment-col-6">
+                                    <select class="form-control appointment-form-control appointment-select" required>
+                                        <option value="">Choose Service</option>
+                                        <option value="general">General Consultation</option>
+                                        <option value="specialist">Specialist Consultation</option>
+                                        <option value="checkup">Health Checkup</option>
+                                        <option value="emergency">Emergency Care</option>
+                                    </select>
+                                </div>
                             </div>
                             
                             <div class="appointment-form-group">
                                 <textarea class="form-control appointment-form-control appointment-textarea" placeholder="Message"></textarea>
                             </div>
                             
-                            <button type="submit" class="btn appointment-btn">Book Now</button>
+                            <button type="submit" class="btn appointment-btn">Get Appointment</button>
                         </form>
                     </div>
                 </div>

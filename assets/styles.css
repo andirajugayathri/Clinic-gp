@@ -252,7 +252,7 @@ body {
 
         .homeabt-tag {
             background: #c8d5e8;
-            color: #2c3e50;
+            color: #101A3C;
             padding: 8px 20px;
             border-radius: 25px;
             font-size: 14px;
@@ -266,7 +266,7 @@ body {
         .homeabt-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: #101A3C;
             line-height: 1.2;
             margin-bottom: 20px;
         }
@@ -524,7 +524,7 @@ body {
         }
 
         .herocta-button {
-            background: #2c5aa0;
+            background: #1A3463;
             color: white;
             padding: 18px 40px;
             border: none;
@@ -639,7 +639,7 @@ body {
         }
 
         .declation-title,.news-title {
-            color: #2c5aa0;
+            color: #1A3463;
             font-size: 42px;
             font-weight: 700;
             text-align: center;
@@ -681,7 +681,7 @@ body {
 
         .declation-emphasis {
             font-weight: 600;
-            color: #2c5aa0;
+            color: #1A3463;
         }
 
         .declation-list {
@@ -1554,7 +1554,7 @@ body {
         }
         
         .blog-checklist-text {
-            color: #6c757d;
+            color: #333;
             font-size: 14px;
             line-height: 1.4;
             margin: 0;
@@ -1716,7 +1716,7 @@ body {
             align-items: center;
             margin-bottom: 15px;
             font-size: 1.1rem;
-            color: #555;
+            color: #69615D;
         }
         
         .abtsec-check-icon {
@@ -1737,7 +1737,7 @@ body {
         }
         
         .abtsec-item-text {
-            font-weight: 500;
+            font-weight: 600;
         }
         
         @media (max-width: 768px) {
@@ -2000,7 +2000,7 @@ body {
         .whyus-title {
             font-size: 3rem;
             font-weight: 700;
-            color: #2c5aa0;
+            color: #1A3463;
             text-align: center;
             margin-bottom: 60px;
         }
@@ -2037,7 +2037,8 @@ body {
         .whyus-icon-wrapper {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #b8f5e8 0%, #a0f0e0 100%);
+            background-color: #124A94;
+            /* background: linear-gradient(135deg, #1A3463 0%, #1a70ff 100%); */
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -2054,7 +2055,7 @@ body {
         .whyus-card-title {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #2c5aa0;
+            color: #1A3463;
             margin-bottom: 20px;
         }
         
@@ -2168,7 +2169,7 @@ body {
         .surgery-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2c5aa0;
+            color: #1A3463;
             margin-bottom: 15px;
         }
         
@@ -2189,7 +2190,7 @@ body {
         
         .surgery-highlight-text {
             font-size: 1.2rem;
-            color: #2c5aa0;
+            color: #1A3463;
             font-weight: 600;
             margin: 0;
         }
@@ -2286,7 +2287,7 @@ body {
         .procedure-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2c5aa0;
+            color: #1A3463;
             margin-bottom: 30px;
         }
         
@@ -2304,12 +2305,12 @@ body {
         .procedure-tag {
             display: inline-block;
             background: #e3f2fd;
-            color: #2c5aa0;
+            color: #1A3463;
             padding: 10px 15px;
             border-radius: 25px;
             margin: 5px 5px 5px 0;
             font-size: 0.8rem;
-            font-weight: 500;
+            font-weight: 600;
             border: 1px solid #bbdefb;
         }
         
@@ -2337,7 +2338,7 @@ body {
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 60px;
         }
         
         .procedure-stat-item {
@@ -2552,36 +2553,12 @@ body {
         }
 
         .appointment-container {
-            background-image: url("/assets/images/appoint.png");
+            background-image: url("../assets/images/form-bg.png");
             background-position: center;
             background-size: cover;
             min-height: 100vh;
             position: relative;
             overflow: hidden;
-        }
-
-        .appointment-container::before {
-            content: '';
-            position: absolute;
-            top: 20%;
-            right: -10%;
-            width: 300px;
-            height: 300px;
-            background: rgba(173, 216, 230, 0.3);
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .appointment-container::after {
-            content: '';
-            position: absolute;
-            bottom: -10%;
-            left: -10%;
-            width: 400px;
-            height: 400px;
-            background: rgba(173, 216, 230, 0.2);
-            border-radius: 50%;
-            z-index: 1;
         }
 
         .appointment-main {
@@ -2873,7 +2850,7 @@ body {
         
         .hteam-title {
             text-align: center;
-            color: #2c5aa0;
+            color: #1A3463;
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 50px;
@@ -2932,6 +2909,7 @@ body {
             color: #666;
             font-size: 0.9rem;
             margin-bottom: 8px;
+            font-weight: 600;
             letter-spacing: 0.5px;
         }
         
@@ -2939,7 +2917,7 @@ body {
             color: #666;
             font-size: 1rem;
             margin-bottom: 25px;
-            font-weight: 500;
+            font-weight: 600;
         }
         
         .hteam-btn {
@@ -2948,7 +2926,7 @@ body {
             border: none;
             padding: 12px 30px;
             border-radius: 25px;
-            font-weight: 500;
+            font-weight: 600;
             text-decoration: none;
             display: inline-block;
             transition: all 0.3s ease;
@@ -3138,7 +3116,7 @@ body {
 
         .hero-title {
             font-size: 60px;
-            font-weight: 700;
+            font-weight: 900;
             color: #1A3463;
             width:170%;
             /* line-height: 94px; */
@@ -3525,10 +3503,10 @@ body {
                margin-bottom: 25px;
         }
         .iconss{
-           color: #2c5aa0; font-size: 1.8rem;
+           color: #1A3463; font-size: 1.8rem;
         }
         .surgery-type-card h3{
-           color: #2c5aa0; 
+           color: #1A3463; 
            font-size: 1.5rem; 
            font-weight: 600; 
         text-align: center;
@@ -3543,7 +3521,7 @@ body {
             padding: 80px 0;
          }
          .surgery-heading h2{
-            color: #2c5aa0; 
+            color: #1A3463; 
             font-size: 2.5rem; 
             font-weight: 700;
              margin-bottom: 20px;
@@ -3767,8 +3745,8 @@ body {
         }
 
         .read-more-btn {
-            color: #21CDC0;
-            border: none;
+            color: white; /* fixed the invalid color value */
+            border: 2px solid #21CDC0; /* adds box border */
             font-weight: 700;
             font-size: 14px;
             letter-spacing: 1px;
@@ -3778,8 +3756,15 @@ body {
             align-self: center;
             position: relative;
             overflow: hidden;
-            background-color: transparent;
-            font-family: 'Roboto';
+            background-color: #21CDC0;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px 20px; /* adds space inside the box */
+            border-radius: 25px; /* optional: adds rounded corners */
+        }
+
+        .read-more-btn:hover {
+            background-color: #21CDC0;
+            color: #21CDC0;
         }
 
         .read-more-btn i{
@@ -4002,7 +3987,7 @@ body {
     .thank-you-title {
       font-size: 28px;
       font-weight: bold;
-      color: #2c5aa0;
+      color: #1A3463;
       margin-bottom: 10px;
     }
 
@@ -4013,7 +3998,7 @@ body {
     }
 
     .back-home-btn {
-      background-color: #2c5aa0;
+      background-color: #1A3463;
       color: #fff;
       border: none;
       padding: 10px 24px;

@@ -371,7 +371,7 @@
         </div>
     </div>
 
-    <div class="appointment-container">
+   <div class="appointment-container">
         <div class="container appointment-main">
             <div class="row align-items-center">
                 <div class="col-lg-6 appointment-doctor-section">
@@ -388,27 +388,42 @@
                         <form>
                             <div class="appointment-row">
                                 <div class="appointment-form-group appointment-col-6">
-                                    <input type="text" class="form-control appointment-form-control" placeholder="Full Name" required>
+                                    <input type="text" class="form-control appointment-form-control" placeholder="First Name" required>
                                 </div>
                                 <div class="appointment-form-group appointment-col-6">
-                                    <input type="email" class="form-control appointment-form-control" placeholder="Email Address" required>
+                                    <input type="text" class="form-control appointment-form-control" placeholder="Last Name" required>
                                 </div>
                             </div>
                             
                             <div class="appointment-row">
                                 <div class="appointment-form-group appointment-col-6">
-                                    <input type="tel" class="form-control appointment-form-control" placeholder="Mobile Number" required>
+                                    <input type="email" class="form-control appointment-form-control" placeholder="Email Address" required>
                                 </div>
                                 <div class="appointment-form-group appointment-col-6">
-                                    <input type="date" class="form-control appointment-form-control" placeholder="Appointment Date" required>
+                                    <input type="tel" class="form-control appointment-form-control" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            
+                            <div class="appointment-row">
+                                <div class="appointment-form-group appointment-col-6">
+                                    <input type="date" class="form-control appointment-form-control" placeholder="Mm/Dd/Yyyy" required>
+                                </div>
+                                <div class="appointment-form-group appointment-col-6">
+                                    <select class="form-control appointment-form-control appointment-select" required>
+                                        <option value="">Choose Service</option>
+                                        <option value="general">General Consultation</option>
+                                        <option value="specialist">Specialist Consultation</option>
+                                        <option value="checkup">Health Checkup</option>
+                                        <option value="emergency">Emergency Care</option>
+                                    </select>
                                 </div>
                             </div>
                             
                             <div class="appointment-form-group">
-                                <textarea class="form-control appointment-form-control appointment-textarea" placeholder="Message" rows="4"></textarea>
+                                <textarea class="form-control appointment-form-control appointment-textarea" placeholder="Message"></textarea>
                             </div>
                             
-                            <button type="submit" class="btn appointment-btn">Book Now</button>
+                            <button type="submit" class="btn appointment-btn">Get Appointment</button>
                         </form>
                     </div>
                 </div>
