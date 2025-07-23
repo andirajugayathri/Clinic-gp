@@ -68,13 +68,30 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 56px;
+  margin-left: 30px;
   font-weight: bold;
   color: #2c3e50 !important;
 }
 
 .navbar-brand img {
   max-width: 180px;
+}
+@media screen and (max-width: 1220px) and (min-width: 950px){
+    .navbar-brand img {
+        max-width: 150px;
+    }
+    .btn-appointment{
+        margin-right: 10px !important;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .navbar-brand{
+        margin-left: 10px;
+    }
+    .navbar-nav .nav-link{
+        padding: 10px !important;
+    }
 }
 
 .brand-name {
@@ -117,7 +134,7 @@ body {
   background-color: #21CDC0!important;
   color: white!important ;
   border: none;
-  margin-right: 120px;
+  margin-right: 80px;
   padding: 15px 25px!important;
   font-weight: bold!important;
   border-radius: 10px!important;
@@ -320,7 +337,7 @@ body {
             padding: 20px 25px;
             border-radius: 10px;
             flex: 1;
-            min-width: 250px;
+            min-width: 200px;
         }
 
         .homeabt-phone-info {
@@ -1756,7 +1773,7 @@ body {
             }
             
             .abtsec-title {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
                 text-align: center;
             }
             
@@ -3107,7 +3124,7 @@ body {
 
         .hero-content {
             /* margin-top: -122px; */
-            padding: 0px 60px;
+            padding: 0 0 0 40px;
             z-index: 2;
             position: relative;
         }
@@ -3119,6 +3136,7 @@ body {
             font-weight: 900;
             color: #1A3463;
             width:170%;
+            padding: 0 50px 0 0;
             /* line-height: 94px; */
             margin-bottom: 20px;
             font-family: 'roboto';
@@ -3136,7 +3154,8 @@ body {
             margin-bottom: 40px;
             font-family: 'Manrope';
             font-weight: 700;
-            font-size: 26px;
+            position: absolute;
+            font-size: 24px;
             /* line-height: 94px; */
             letter-spacing: -1px;
             text-transform: capitalize;
@@ -3144,6 +3163,7 @@ body {
         }
 
         .hero-buttons {
+            margin-top: 120px;
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
@@ -3203,7 +3223,8 @@ body {
             justify-content: center;
             background-image: url('../assets/images/Vector 1.png');
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
+            padding: 0;
         }
 
         .hero-image-container {
@@ -3345,7 +3366,7 @@ body {
             .hero-content {
                 text-align: center;
                 z-index: 2;
-                margin-top: 0px;
+                margin-top: -1px;
                 position: relative;
                 /* background-color: rgba(255, 255, 255, 0.6);  */
                 border-radius: 10px; 
@@ -3422,7 +3443,7 @@ body {
             .hero-image {
                 /* position: relative; */
                 display: flex;
-               margin-top: -189px;
+               margin-top: -245px;
                 height: auto;
                 align-items: center;
                 justify-content: center;
@@ -3448,8 +3469,8 @@ body {
     background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 50%, #b8e6eb 100%);
     position: relative;
     /* padding-top: 147px; */
-    min-height: 216px;
-    max-height:251px;
+    /* min-height: 216px;
+    max-height:251px; */
 }
         }
                     
@@ -3493,7 +3514,7 @@ body {
              box-shadow 0.3s ease;
         }
         .surgery-type-icon{
-            background: linear-gradient(135deg, #b8f5e8 0%, #a0f0e0 100%);
+            background-color: #124A94;
              width: 70px; 
              height: 70px;
               border-radius: 15px; 
@@ -3560,7 +3581,7 @@ body {
 
         .services-section {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1297px;
             padding: 60px 20px;
             text-align: center;
         }
@@ -3598,12 +3619,12 @@ body {
         .carousel-wrapper {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            gap: 42px;
+            gap: 34px;
             padding: 20px 0;
         }
 
         .service-card {
-            flex: 0 0 280px;
+            flex: 0 0 391px;
             cursor: pointer;
             position: relative;
         }
@@ -3664,7 +3685,7 @@ body {
         }
 
         .card-image {
-            height: 200px;
+            height: 260px;
             background-size: cover;
             background-position: center;
             position: relative;

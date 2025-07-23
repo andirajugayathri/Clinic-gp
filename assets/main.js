@@ -435,7 +435,7 @@ class ServiceCarousel {
         }
 
         const cardWidth = card.offsetWidth;
-        const gap = 30; // Fixed gap value
+        const gap = 30; 
         const slideWidth = cardWidth + gap;
 
         let offset;
