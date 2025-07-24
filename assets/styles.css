@@ -3255,8 +3255,8 @@ body {
             z-index: 2;
             max-width: 50%;
             width: auto;
-            max-height: 470px;
-            min-height: 450px;
+            max-height: 495px;
+            min-height: 495px;
             border-radius: 10px;
             transition: all 0.3s ease;
         }
