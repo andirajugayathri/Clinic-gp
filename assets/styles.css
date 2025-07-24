@@ -1056,8 +1056,8 @@ body {
         }
 
         .teamdesc-title {
-            font-size: 3.5rem;
-            font-weight: 800;
+            font-size: 40px;
+            font-weight: 700;
             margin-bottom: 40px;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -1110,7 +1110,7 @@ body {
 
         
         .team {
-            background-color: #f8fafc;
+            /* background-color: #f8fafc; */
             padding: 20px 0;
             font-family: 'Arial', sans-serif;
         }
@@ -1141,9 +1141,9 @@ body {
         }
 
         .team-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #2d3748;
+            font-size: 36px;
+            font-weight: 600;
+            color: #1A3463;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -1181,7 +1181,7 @@ body {
         .team-achievement-icon {
             width: 24px;
             height: 24px;
-            background-color: #38b2ac;
+            background-color: #21CDC0;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1344,7 +1344,7 @@ body {
         }
 
         .ctnpage-container {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
             padding: 60px 0;
             min-height: 100vh;
         }
@@ -1377,8 +1377,8 @@ body {
         .ctnpage-icon-wrapper {
             width: 50px;
             height: 50px;
-            background: #e8f4f8;
-            border-radius: 12px;
+            background: #D8E5FC;
+            border-radius: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1405,7 +1405,7 @@ body {
         }
         
         .ctnpage-contact-section {
-            background: #f8f9fa;
+            background: #EEF4FE;
             border-radius: 20px;
             padding: 40px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.05);
@@ -1800,9 +1800,9 @@ body {
         }
 
         .clients-title {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #2c5282;
+            font-size: 40px;
+            font-weight: 700;
+            color: #1A3463;
             margin-bottom: 40px;
             line-height: 1.2;
         }
@@ -1858,9 +1858,9 @@ body {
         }
 
         .clients-name {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #00bcd4;
+            font-size: 40px;
+            font-weight: 700;
+            color: #21CDC0;
             margin-bottom: 25px;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
