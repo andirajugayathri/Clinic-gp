@@ -3791,11 +3791,7 @@ body {
             border-radius: 25px; /* optional: adds rounded corners */
         }
 
-        .read-more-btn:hover {
-            background-color: #21CDC0;
-            color: #21CDC0;
-        }
-
+      
         .read-more-btn i{
             font-size: 12px;
         }
