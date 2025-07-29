@@ -421,6 +421,21 @@ body {
             .homeabt-title {
                 font-size: 2rem;
             }
+            .proportion-mbl{
+                top: 22%; 
+                left: 50%; 
+                transform: translate(-50%, -50%); 
+                width: 100%;
+               color:#1A3463;
+               text-align: left!important;
+               font-family: 'roboto';
+            }
+            .text-primary{
+                color: #21CDC0 !important;
+            }
+            .clinic-title{
+                font-size: 45px!important;
+            }
         }
 
         @media (max-width: 768px) {
