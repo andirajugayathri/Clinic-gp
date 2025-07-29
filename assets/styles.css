@@ -2244,12 +2244,11 @@ body {
             align-items: center;
             gap: 10px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3);
         }
         
         .surgery-cta-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(32, 201, 151, 0.4);
+            background-color: #21CDC0 !important;
             color: white;
             text-decoration: none;
         }
@@ -2707,9 +2706,8 @@ body {
 
         .appointment-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(44, 62, 80, 0.3);
+            background-color: #21CDC0 !important;
             color: white;
-            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
         }
 
         .appointment-row {
@@ -3137,8 +3135,10 @@ body {
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease!important;
-    box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3)!important;
     }
+  .btn-call-us:hover{
+     background-color: #21CDC0 !important;
+  }
 
     
 
