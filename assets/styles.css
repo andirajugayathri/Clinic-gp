@@ -2402,14 +2402,14 @@ body {
             }
             
             .procedure-image-section {
-                height: 300px;
+                /* height: 300px; */
                 margin-top: 40px;
                 margin-bottom: 140px;
             }
             
-            .procedure-team-image {
+            /* .procedure-team-image {
                 height: 280px;
-            }
+            } */
             
             .procedure-medical-icon {
                 right: 20px;
