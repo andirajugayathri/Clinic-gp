@@ -4,6 +4,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+
 /* Topbar Styles */
 .topbar {
   background-color:#1A3463 ;
@@ -75,6 +76,43 @@ body {
 
 .navbar-brand img {
   max-width: 180px;
+}
+@media (min-width: 820px) and (max-width: 949px) {
+    .none {
+        display: none;
+    }
+    .hero-image-container{
+        align-items: flex-end !important;
+    }
+    .hero-content{
+        position: absolute !important;
+    }
+    .hero-title{
+        max-width: 100%;
+        text-align: left;
+    }
+    .hero-text{
+        align-items: baseline !important;
+    }
+    .hero-subtitle{
+        margin-bottom: 0 !important;
+    }
+    .hero-image{
+        margin-top:0 !important ;
+    }
+    
+    .whyus-cards {
+        margin-bottom: 50px!important;
+    }
+    .procedure-stats-section{
+        width: 100%!important;
+    }
+    .team-card-name {
+        margin-top: -20px!important;
+    }
+    .ctnpage-submit-btn{
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 1220px) and (min-width: 950px){
     .navbar-brand img {
@@ -1194,10 +1232,12 @@ body {
         }
 
         .team-achievement-icon {
-            width: 24px;
-            height: 24px;
+            width: 25px;
+            height: 25px;
+            color: white;
             background-color: #21CDC0;
             border-radius: 50%;
+            font-size: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1206,12 +1246,12 @@ body {
             flex-shrink: 0;
         }
 
-        .team-achievement-icon::after {
+        /* .team-achievement-icon::after {
             content: '→';
             color: white;
             font-weight: bolder;
             font-size: 15px;
-        }
+        } */
 
         .team-card {
             background: linear-gradient(135deg, #2c5282 0%, #2a4365 100%);
@@ -1499,7 +1539,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
+            /* margin: 0 auto; */
         }
         
         .ctnpage-submit-btn:hover {
@@ -1525,6 +1565,9 @@ body {
             
             .ctnpage-contact-title {
                 font-size: 1.5rem;
+            }
+            .ctnpage-submit-btn{
+                margin: 0 auto;
             }
         }
 
@@ -2079,9 +2122,8 @@ body {
         }
 
         .whyus-icon-wrapper img{
-            width: 50px;
-            filter: brightness(0) invert(1);
-        }
+            width: 45px;  
+        } 
         
         .whyus-icon {
             font-size: 2rem;
@@ -2351,7 +2393,7 @@ body {
         
         .procedure-image-section {
             position: relative;
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
         }
         
         .procedure-image-section img{
@@ -2404,7 +2446,7 @@ body {
             .procedure-image-section {
                 /* height: 300px; */
                 margin-top: 40px;
-                margin-bottom: 140px;
+                /* margin-bottom: 140px; */
             }
             
             /* .procedure-team-image {
@@ -2487,7 +2529,7 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            max-width: 1100px;
+            max-width: 1242px;
             margin: 0 auto;
         }
         
@@ -2513,7 +2555,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 104%;
             height: 100%;
             object-fit: cover;
             transition: all 0.5s ease;
@@ -3564,7 +3606,6 @@ body {
         }
         .surgery-type-icon img{
             width: 50px;
-            filter: brightness(0) invert(1);
         }
         
         .iconss{
