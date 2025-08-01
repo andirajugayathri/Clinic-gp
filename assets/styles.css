@@ -100,6 +100,9 @@ body {
     .hero-image{
         margin-top:0 !important ;
     }
+    .image-container{
+        height: 215px!important;
+    }
     
     .whyus-cards {
         margin-bottom: 50px!important;
@@ -2632,7 +2635,7 @@ body {
             }
             
             .image-container {
-                height: 350px;
+                height: 186px;
             }
         }
 
